@@ -1,0 +1,9 @@
+# Scenario 01 : fonctionnement nominal, aucune alarme
+SENSOR TEMP T1 ENG1_EGT -50 900
+SENSOR PRES P1 ENG1_OIL 20 80
+
+READ 1 T1 420
+READ 1 P1 55
+READ 2 T1 610
+READ 2 P1 60
+REPORT 3

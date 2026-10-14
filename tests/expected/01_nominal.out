@@ -1,0 +1,6 @@
+[T+----] INFO  sensor registered: T1 (ENG1_EGT) TEMP [-50..900 degC]
+[T+----] INFO  sensor registered: P1 (ENG1_OIL) PRES [20..80 psi]
+[T+0003] INFO  report: 2 sensors, 0 alarms (0 unacknowledged), 0 raised in total
+[T+0003] INFO    P1 ENG1_OIL = 60 psi [OK]
+[T+0003] INFO    T1 ENG1_EGT = 610 degC [OK]
+[T+----] INFO  end of run: 9 lines, 0 warnings, 0 errors

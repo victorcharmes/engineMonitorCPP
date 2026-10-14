@@ -1,0 +1,20 @@
+[T+----] INFO  sensor registered: T1 (ENG1_EGT) TEMP [-50..900 degC]
+[T+----] ERROR line 3: duplicate sensor 'T1'
+[T+----] ERROR line 4: unknown sensor type 'VIB'
+[T+----] ERROR line 5: invalid range for 'P1'
+[T+----] INFO  sensor registered: P2 (ENG2_OIL) PRES [20..80 psi]
+[T+0001] ERROR line 7: unknown sensor 'X9'
+[T+----] ERROR line 8: malformed READ command
+[T+----] ERROR line 9: malformed READ command
+[T+----] ERROR line 10: unknown command 'read'
+[T+----] ERROR line 11: unknown command 'DUMP'
+[T+0003] ERROR line 12: no unacknowledged alarm for 'T1'
+[T+0003] ERROR line 13: unknown sensor 'X9'
+[T+0004] WARN  alarm raised: P2 CRITICAL value=10 psi
+[T+0005] INFO  alarm acknowledged: P2
+[T+0006] ERROR line 16: no unacknowledged alarm for 'P2'
+[T+----] ERROR line 17: malformed REPORT command
+[T+0007] INFO  report: 2 sensors, 1 alarms (0 unacknowledged), 1 raised in total
+[T+0007] INFO    P2 ENG2_OIL = 10 psi [CRITICAL ACKNOWLEDGED]
+[T+0007] INFO    T1 ENG1_EGT = --- degC [OK]
+[T+----] INFO  end of run: 18 lines, 1 warnings, 12 errors

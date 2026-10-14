@@ -1,0 +1,24 @@
+# Scenario 02 : cycle de vie des alarmes
+SENSOR TEMP T1 ENG1_EGT -50 900
+SENSOR PRES P1 ENG1_OIL 20 80
+SENSOR TEMP T2 ENG2_EGT -50 900
+
+READ 1 T1 650
+READ 1 P1 50
+# T1 depasse le max : alarme critique
+READ 2 T1 950
+# meme gravite : pas de nouveau message
+READ 3 T1 960
+ACK 4 T1
+REPORT 5
+# T1 passe sous le min : gravite modifiee, acquittement perdu
+READ 6 T1 -60
+REPORT 7
+# retour a la normale
+READ 8 T1 700
+# P1 : perte de pression puis surpression
+READ 9 P1 12
+READ 10 P1 95
+ACK 11 P1
+READ 12 T1 1000
+REPORT 13

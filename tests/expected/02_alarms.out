@@ -1,0 +1,24 @@
+[T+----] INFO  sensor registered: T1 (ENG1_EGT) TEMP [-50..900 degC]
+[T+----] INFO  sensor registered: P1 (ENG1_OIL) PRES [20..80 psi]
+[T+----] INFO  sensor registered: T2 (ENG2_EGT) TEMP [-50..900 degC]
+[T+0002] WARN  alarm raised: T1 CRITICAL value=950 degC
+[T+0004] INFO  alarm acknowledged: T1
+[T+0005] INFO  report: 3 sensors, 1 alarms (0 unacknowledged), 1 raised in total
+[T+0005] INFO    P1 ENG1_OIL = 50 psi [OK]
+[T+0005] INFO    T1 ENG1_EGT = 960 degC [CRITICAL ACKNOWLEDGED]
+[T+0005] INFO    T2 ENG2_EGT = --- degC [OK]
+[T+0006] WARN  alarm updated: T1 WARNING value=-60 degC
+[T+0007] INFO  report: 3 sensors, 1 alarms (1 unacknowledged), 1 raised in total
+[T+0007] INFO    P1 ENG1_OIL = 50 psi [OK]
+[T+0007] INFO    T1 ENG1_EGT = -60 degC [WARNING ACTIVE]
+[T+0007] INFO    T2 ENG2_EGT = --- degC [OK]
+[T+0008] INFO  alarm cleared: T1 value=700 degC
+[T+0009] WARN  alarm raised: P1 CRITICAL value=12 psi
+[T+0010] WARN  alarm updated: P1 WARNING value=95 psi
+[T+0011] INFO  alarm acknowledged: P1
+[T+0012] WARN  alarm raised: T1 CRITICAL value=1000 degC
+[T+0013] INFO  report: 3 sensors, 2 alarms (1 unacknowledged), 3 raised in total
+[T+0013] INFO    P1 ENG1_OIL = 95 psi [WARNING ACKNOWLEDGED]
+[T+0013] INFO    T1 ENG1_EGT = 1000 degC [CRITICAL ACTIVE]
+[T+0013] INFO    T2 ENG2_EGT = --- degC [OK]
+[T+----] INFO  end of run: 24 lines, 5 warnings, 0 errors
