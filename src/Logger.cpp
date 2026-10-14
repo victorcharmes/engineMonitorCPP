@@ -13,8 +13,9 @@ void Logger::log(LogLevel level, int time, const std::string& message){
     if (time == NO_TIME){
         m_out << "----";
     }else{
+        char ancienFill = m_out.fill(); //on mémorise le fill
         m_out << std::setw(4) << std::setfill('0') << time; //sur une largeur de 4 caractères, on complète de 0
-        m_out << std::setfill(' '); // on remet l'espace, sinon '0' reste actif
+        m_out.fill(ancienFill); // on remet le fill, sinon '0' reste actif
     }
     m_out << "] ";
     if (level == LOG_INFO){
