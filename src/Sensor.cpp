@@ -17,7 +17,7 @@ Sensor::Sensor(const std::string& id, const std::string& label, int minValue, in
 {
 }
 
-Sensor::~Sensor(){};
+Sensor::~Sensor(){}
 
 const std::string& Sensor::id() const{
     return m_id;
