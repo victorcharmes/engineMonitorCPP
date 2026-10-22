@@ -19,7 +19,7 @@ public:
     SensorRegistry();
     SensorRegistry(const SensorRegistry& other);
     SensorRegistry& operator=(const SensorRegistry& other);
-    ~SensorRegistry();
+    ~SensorRegistry();  
 
     /// Prend possession de 'sensor'.
     /// Renvoie false si un capteur de meme id existe deja : dans ce cas
